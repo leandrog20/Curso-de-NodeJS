@@ -1,0 +1,22 @@
+<div class="jumbotron bg-secondary-subtle p-5 mb-5" >
+  <h1 class="display-4">Bem-vindo ao Blog NodeJs</h1>
+  <p class="lead">Este é um simples componente jumbotron para chamar mais atenção a um determinado conteúdo ou informação.</p>
+  <hr class="my-4">
+  <p>Ele usa classes utilitárias para tipografia e espaçamento de conteúdo, dentro do maior container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+</div>
+
+<hr>
+
+<h2 class="mt-4">Postagens recentes: </h2>
+
+{{#each postagens}}
+    <div class="card mb-3 mt-4">
+        <div class="card-body">
+        <h5 class="card-title">{{this.titulo}}</h5>
+        <p class="card-text">{{this.descricao}}</p>
+        </div>
+    </div>
+{{else}}
+
+{{/each}}
